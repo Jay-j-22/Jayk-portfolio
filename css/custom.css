@@ -21620,7 +21620,8 @@
 
 .site-header .brand-logo {
   position: relative;
-  top: -2px;
+  top: 0px;
+  max-width: 100px;
 }
 
 @media (min-width: 992px) {
@@ -21645,7 +21646,7 @@
 }
 
 .main-menu > li > a:hover {
-  color: #2780ff;
+  color: #13a89e;
 }
 
 @media (min-width: 992px) {
@@ -21704,7 +21705,7 @@
 
 @media (min-width: 992px) {
   .main-menu .menu-dropdown .single-item:hover a h3 {
-    color: #2780ff;
+    color: #13a89e;
   }
 }
 
@@ -21762,7 +21763,7 @@
 }
 
 .header-btns .btn-link:hover {
-  color: #2780ff;
+  color: #13a89e;
 }
 
 .header-btns.btns-group {
@@ -21772,10 +21773,10 @@
 /*  Mobile Menu / Mean Menu Reset  */
 .hamburger-icon {
   font-size: 16px;
-  color: #2780ff;
+  color: #13a89e;
   width: 36px;
   height: 36px;
-  border: 2px solid #2780ff;
+  border: 2px solid #13a89e;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -21791,7 +21792,7 @@
 }
 
 .hamburger-icon:hover {
-  background: #2780ff;
+  background: #13a89e;
   color: #fff;
   border-color: transparent;
 }
@@ -21874,7 +21875,7 @@
   width: 50px;
   height: 50px;
   font-size: 20px;
-  background-color: #2780ff;
+  background-color: #13a89e;
   color: #fff;
   line-height: 50px;
   text-align: center;
@@ -21930,7 +21931,7 @@
 }
 
 .mobile-navigation .mobile-menu li:hover > a {
-  color: #2780ff;
+  color: #13a89e;
 }
 
 .mobile-navigation .mobile-menu a {
@@ -21954,19 +21955,19 @@
 
 @media (min-width: 480px) {
   .hero-content .title {
-    font-size: 46px;
+    font-size: 40px;
   }
 }
 
 @media (min-width: 576px) {
   .hero-content .title {
-    font-size: 50px;
+    font-size: 42px;
   }
 }
 
 @media (min-width: 992px) {
   .hero-content .title {
-    font-size: 56px;
+    font-size: 46px;
   }
 }
 
@@ -21974,14 +21975,14 @@
   color: #000000;
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.33;
   padding-right: 7px;
 }
 
 @media (min-width: 480px) {
   .hero-content p {
     font-size: 20px;
-    line-height: 34px;
+    line-height: 1.5;
   }
 }
 
@@ -22001,41 +22002,41 @@
   margin-bottom: -15px;
 }
 
-.hero-btns .android {
+.hero-btns .linkedin {
   margin-bottom: 15px;
 }
 
-.hero-btns .android i {
+.hero-btns .linkedin i {
   color: #fff;
 }
 
-.hero-btns .android span {
+.hero-btns .linkedin span {
   padding-left: 10px;
   color: #fff;
   font-weight: 600;
   letter-spacing: 0;
 }
 
-.hero-btns .android span:hover {
+.hero-btns .linkedin span:hover {
   color: #fff;
 }
 
-.hero-btns .apple {
+.hero-btns .resume {
   margin-bottom: 15px;
 }
 
-.hero-btns .apple i {
+.hero-btns .resume i {
   color: #fff;
 }
 
-.hero-btns .apple span {
+.hero-btns .resume span {
   padding-left: 10px;
   color: #fff;
   font-weight: 600;
   letter-spacing: 0;
 }
 
-.hero-btns .apple span:hover {
+.hero-btns .resume span:hover {
   color: #fff;
 }
 
@@ -22232,6 +22233,11 @@
   }
 }
 
+.feature-widget .content img {
+  width: 100%;
+  max-width: 350px;
+}
+
 /* /////////////////////////// 
     Content Section
 //////////////////////////// */
@@ -22315,18 +22321,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+            
+       
+
 }
+
+
 
 @media (min-width: 768px) {
   .content-wrapper .content-image-01 {
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 10px;
   }
 }
 
 .content-wrapper .content-image-01 img {
   max-width: 100%;
+}
+
+.content-wrapper .content-image-02.shadow {
+  box-shadow: 0 12px 20px 0 rgb(27 27 29 / 15%);  
 }
 
 .content-wrapper .content-image-02 {
@@ -22358,6 +22373,7 @@
   color: #000000;
   font-weight: 700;
   letter-spacing: -0.34px;
+  margin-top: 18px;
 }
 
 @media (min-width: 768px) {
@@ -22511,10 +22527,10 @@
 }
 
 .content-widget .widget-icon {
-  background-color: #2780ff;
+  background-color: inherit;
   border-radius: 50%;
-  width: 55px;
-  height: 55px;
+  width: auto;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22524,14 +22540,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 15px;
   font-size: 28px;
   color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  margin-top: 7px;
+  margin-top: 3px;
   margin-right: 25px;
 }
+
 
 @media (min-width: 576px) {
   .content-widget .widget-icon {
@@ -22540,11 +22556,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .content-widget .widget-icon {
-    margin-bottom: 15px;
-  }
-}
 
 @media (min-width: 992px) {
   .content-widget .widget-icon {
@@ -22697,7 +22708,7 @@
           justify-content: center;
   -webkit-transition: .4s;
   transition: .4s;
-  background-color: #2780ff;
+  background-color: #13a89e;
   color: #fff;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -22784,6 +22795,7 @@
           justify-content: center;
   margin: 0 auto;
   overflow: hidden;
+  cursor: pointer;
 }
 
 @media (min-width: 690px) {
@@ -22860,47 +22872,47 @@
   margin-bottom: -15px;
 }
 
-.cta-btns .android {
+.cta-btns .linkedin {
   margin-bottom: 15px;
   letter-spacing: 0;
 }
 
 @media (min-width: 576px) {
-  .cta-btns .android {
+  .cta-btns .linkedin {
     margin-right: 15px;
   }
 }
 
-.cta-btns .android i {
+.cta-btns .linkedin i {
   color: #fff;
 }
 
-.cta-btns .android span {
+.cta-btns .linkedin span {
   padding-left: 10px;
   color: #fff;
   font-weight: 600;
 }
 
-.cta-btns .android span:hover {
+.cta-btns .linkedin span:hover {
   color: #fff;
 }
 
-.cta-btns .apple {
+.cta-btns .resume {
   margin-bottom: 15px;
   letter-spacing: 0;
 }
 
-.cta-btns .apple i {
+.cta-btns .resume i {
   color: #fff;
 }
 
-.cta-btns .apple span {
+.cta-btns .resume span {
   padding-left: 10px;
   color: #fff;
   font-weight: 600;
 }
 
-.cta-btns .apple span:hover {
+.cta-btns .resume span:hover {
   color: #fff;
 }
 
@@ -22926,12 +22938,12 @@
 }
 
 .cta-icon i {
-  color: #2780ff;
+  color: #13a89e;
   font-size: inherit;
 }
 
 .cta-icon:hover {
-  background-color: #2780ff;
+  background-color: #13a89e;
 }
 
 .cta-icon:hover i {
@@ -23046,7 +23058,7 @@
   width: 60px;
   height: 60px;
   font-size: 28px;
-  background-color: #2780ff;
+  background-color: #13a89e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23068,10 +23080,10 @@
 }
 
 .badge {
-  width: 132px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #fa8231;
+  width: 200px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: #222d3d;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23088,10 +23100,11 @@
 
 .badge span {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
-  padding-left: 10px;
+  text-transform: capitalize;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @media (min-width: 768px) {
@@ -23107,3 +23120,7 @@
   }
 }
 /*# sourceMappingURL=custom.css.map */
+
+.no-wrap {
+  word-break: keep-all;
+}

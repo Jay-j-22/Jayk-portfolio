@@ -5,6 +5,9 @@
 /*=====================================*/
 /*-- :::: Space Decrease :::: --*/
 /*=====================================*/
+html {
+  scroll-behavior: smooth;
+}
 .space-db--0 {
   margin-bottom: 0px;
 }
@@ -21667,10 +21670,6 @@ img {
   max-width: 100%;
 }
 
-span {
-  font-size: 12px;
-}
-
 .btn:focus,
 .btn:active {
   -webkit-box-shadow: none;
@@ -21728,7 +21727,7 @@ input[type="number"] {
 
 @media (min-width: 992px) {
   .section-padding {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 120px;
   }
 }
@@ -21787,7 +21786,31 @@ input[type="number"] {
 
 /* Typography */
 .text--primary {
-  color: #2780ff;
+  color: #13a89e;
+}
+
+.btn--primary { 
+  background-color: #13a89e;
+  color: #FFF;
+}
+
+.btn--primary:hover {
+  background-color: rgba(19, 168, 158, .8);
+  color: #fff;
+}
+
+.btn--secondary { 
+  background-color: #eb553b;
+  color: #FFF;
+}
+
+.btn--secondary:hover {
+  color: #fff;
+}
+
+.btn--primary.widgetin:hover {
+  background-color: #13a89e;
+  color: #fff;
 }
 
 .fs-inherit {

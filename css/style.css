@@ -21614,13 +21614,18 @@
   height: 50px;
 }
 
-.btn--primary {
-  background-color: #2780ff;
+.btn--primary { 
+  background-color: #13a89e;
   color: #FFF;
 }
 
 .btn--primary:hover {
-  background-color: rgba(39, 128, 255, 0.8);
+  background-color: rgba(19, 168, 158, .8);
+  color: #fff;
+}
+
+.btn--primary.widgetin:hover {
+  background-color: #13a89e;
   color: #fff;
 }
 
@@ -23208,7 +23213,6 @@ p {
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  padding-left: 10px;
 }
 
 @media (min-width: 768px) {
