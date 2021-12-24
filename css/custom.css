@@ -23244,5 +23244,11 @@ textarea.form-control {
     color: #e3b04b; }  
 
 form input[type=submit] {
-  width: 30%;
+  width: 50%;
+}
+
+@media (min-width: 992px) {
+  form input[type=submit] {
+    width: 35%;
+  }
 }
