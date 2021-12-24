@@ -21602,6 +21602,10 @@
   background-color: #f5f5f8;
 }
 
+.site-brand {
+  max-width: 120px;
+}
+
 @media (min-width: 768px) {
   .site-header {
     padding-top: 20px;
@@ -21622,6 +21626,13 @@
   position: relative;
   top: 0px;
   max-width: 100px;
+  margin-left: 20px;
+}
+
+@media (max-width: 992px) {
+  .site-header .brand-logo {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -22123,7 +22134,7 @@
 
 @media (min-width: 992px) {
   .hero-image .phn-shape {
-    top: -15px;
+    top: 65px;
     left: -30px;
   }
 }
@@ -22158,10 +22169,18 @@
   left: 0;
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .hero-image .absolute-image.image-2 {
     left: 18%;
   }
+} */
+
+.absolute-image-badge {
+  position: absolute;
+  top: 48px;
+  left: -10px;
+  max-width: 180px;
+  z-index: -1;
 }
 
 .hero-shape {
@@ -22169,6 +22188,7 @@
   bottom: 0px;
   left: 0;
   z-index: -1;
+  max-width: 200px;
 }
 
 /* /////////////////////////// 
@@ -22544,7 +22564,7 @@
   color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  margin-top: 3px;
+  margin-top: 15px;
   margin-right: 25px;
 }
 
@@ -22553,6 +22573,7 @@
   .content-widget .widget-icon {
     margin-bottom: 0px;
     margin-left: 0;
+    margin-top: 0px;
   }
 }
 
@@ -22844,10 +22865,11 @@
     CTA Section
 //////////////////////////// */
 .cta-section {
-  background-image: url(../image/Rectangle.png);
+  background-image: url(../image/Contact_bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 
 .cta-wrapper {
@@ -22954,8 +22976,26 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  display: none;
+  z-index: -1;
 }
 
+@media (min-width: 576px) {
+  .cta-shape {
+    max-width: 150px;
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .cta-shape {
+    max-width: 200px;
+  }
+}
+p.contact-text {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400;
+}
 /* /////////////////////////// 
     Footer Section 
 //////////////////////////// */
@@ -23080,10 +23120,10 @@
 }
 
 .badge {
-  width: 200px;
-  height: 45px;
-  border-radius: 25px;
-  background-color: #222d3d;
+  width: 140px;
+  height: 35px;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 1);
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23096,15 +23136,19 @@
           justify-content: center;
   margin-bottom: 15px;
   margin-top: 25px;
+  opacity: .5;
 }
 
 .badge span {
-  color: #ffffff;
+  color: #222d3d;
   font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
   padding-left: 5px;
   padding-right: 5px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  letter-spacing: .5px;
 }
 
 @media (min-width: 768px) {
@@ -23119,8 +23163,86 @@
     margin-top: 120px;
   }
 }
+
+@media (max-width: 992px) {
+  .badge {
+    background-color: rgb(235, 85, 59);
+  }
+  .badge span {
+    color: #fff;
+  }
+}
+
 /*# sourceMappingURL=custom.css.map */
 
 .no-wrap {
   word-break: keep-all;
+}
+
+/* form */
+
+
+.form-control {
+  height: 40px;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-size: 14px;
+  border-radius: 0px;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1); }
+  .form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(0, 0, 0, 0.5) !important; }
+  .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(0, 0, 0, 0.5) !important; }
+  .form-control:-ms-input-placeholder {
+    /* IE 0+ */
+    color: rgba(0, 0, 0, 0.5) !important; }
+  .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(0, 0, 0, 0.5) !important; }
+  .form-control:focus, .form-control:active {
+    background: transparent;
+    border-color: rgba(0, 0, 0, 0.3) !important; }
+
+textarea.form-control {
+  height: inherit !important; }
+
+  .contactForm .form-control {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  
+  #contactForm .error {
+    color: red;
+    font-size: 12px; }
+  
+  #contactForm .form-control {
+    font-size: 16px; }
+  
+  #message {
+    resize: vertical; }
+  
+  #form-message-warning, #form-message-success {
+    display: none; }
+  
+  #form-message-warning {
+    color: red; }
+  
+  #form-message-success {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: 500; }
+  
+  .submitting {
+    float: left;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #e3b04b; }  
+
+form input[type=submit] {
+  width: 30%;
 }

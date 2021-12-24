@@ -8,6 +8,13 @@
 html {
   scroll-behavior: smooth;
 }
+.container {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .space-db--0 {
   margin-bottom: 0px;
 }
@@ -21606,7 +21613,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: #1f1f1f;
@@ -21630,6 +21637,9 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 a,
@@ -21721,13 +21731,13 @@ input[type="number"] {
 
 /* Spacing */
 .section-padding {
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 60px;
 }
 
 @media (min-width: 992px) {
   .section-padding {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 120px;
   }
 }

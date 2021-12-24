@@ -21612,6 +21612,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   height: 50px;
+  z-index: 99;
 }
 
 .btn--primary { 
@@ -22279,11 +22280,11 @@ p {
   left: 0;
 }
 
-@media (min-width: 1600px) {
+/* @media (min-width: 1600px) {
   .hero-image .absolute-image.image-2 {
     left: 18%;
   }
-}
+} */
 
 .hero-shape {
   position: absolute;
@@ -23060,11 +23061,11 @@ p {
   color: #fff;
 }
 
-.cta-shape {
+/* .cta-shape {
   position: absolute;
   bottom: 0;
   left: 0;
-}
+} */
 
 /* /////////////////////////// 
     Footer Section 

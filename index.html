@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title></title>
+    <title>Juyeon's Portfolio</title>
     <!-- Plugins CSS -->
     <link
       rel="stylesheet"
@@ -21,10 +21,29 @@
     <link rel="stylesheet" href="./fonts/ep-icon-fonts/css/style.css" />
     <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css" />
     <link rel="stylesheet" href="./fonts/typography-font/typo-fonts.css" />
+    <link rel="stylesheet" href="./fonts/Source_Sans_Pro/source_sans-fonts.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./css/settings.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/custom.css" />
+
+    <!-- favicon -->
+    <link rel="icon" href="image/juyeonlogo_favicon.png" sizes="32x32" />
+
+    <meta name="description" content="Portfolio Web Page"/>
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jays" />
+    <meta property="og:description" content="Portfolio Web Page" />
+    <meta property="og:url" content="https://jay-j-22.github.io/Jk-portfolio.github.io/" />
+    <meta property="og:site_name" content="Jays" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:secure_url" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="629" />
   </head>
 
   <body>
@@ -84,8 +103,8 @@
               <ul class="mobile-menu">
                 <li class="menu-item-has-children">
                 </li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#content1">Pages</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
             <!-- mobile menu navigation end -->
@@ -103,14 +122,18 @@
           <div class="row">
             <div class="col-md-8 col-lg-7 col-xl-6  pb-lg--90 pb-xl--0 order-2 order-md-1">
               <div class="badge" data-aos="fade-up"  data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">
-                <span>Welcome!</span>
+                
+                <span>WELCOME!</span>
               </div>
+              <div class="absolute-image-badge image-1 d-none d-lg-block" data-aos="fade-up" data-aos-duration="1500"  data-aos-delay="300" data-aos-once="true">
+                <img src="./image/Asset_53.png" alt="">
+            </div>
               <div class="hero-content">
-                <h1 class="title mb--30">
+                <h1 class="title mb--30 pt-3">
                   Hi! I'm Juyeon.
                 </h1>
                 <p>
-                  A Web Designer & Developer with years of experience in Web Design & Development specialized in Email Marketing. Worked directly with a marketing team, and freelanced for various creatives. Good communicator, <span class="no-wrap">detail-oriented</span>, <span class="no-wrap">self-motivated</span> individual who is always looking for means to grow and improve in chosen area of expertise.
+                  A Front-end Developer with years of experience in graphic design & web development. Worked directly with a marketing team, and freelanced for various creatives. Good communicator, <span class="no-wrap">detail-oriented</span>, <span class="no-wrap">self-motivated</span> individual who is always looking for means to grow and improve in chosen area of expertise.
                 </p>
               </div>
 
@@ -130,24 +153,24 @@
             <div class="col-md-4 col-lg-5 col-xl-6 col-10 mb--30 mb-md--0 order-1 order-md-2">
               <div class="hero-image position-relative">
                   <div class="absolute-image image-1 d-none d-lg-block" data-aos="fade-left" data-aos-duration="1500"  data-aos-delay="300" data-aos-once="true">
-                      <img src="./image/shape2.png" alt="">
+                      <img src="./image/Asset_42.png" alt="">
                   </div>
                   <div class="absolute-image image-2 d-none d-lg-block">
                         <img src="./image/cleo-stracuzza-unsplash-crop1200.png" alt="cleo stracuzza from unsplash">
                   </div>
                 <div class="phn-shape d-none d-lg-block" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true" data-aos-delay="200">
-                  <img src="image/phn-shape.png" alt="" />
+                  <img src="image/Asset_36.png" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="hero-shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100"><img src="image/hero-shape.png" alt="" /></div>
+        <div class="hero-shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100"><img src="image/Asset_54.png" alt="" /></div>
       </section>
 
 
       <!-- Content Section 01 -->
-      <section class="content-section section-padding-top">
+      <section class="content-section section-padding-top" id="content1">
         <div class="container">
           <div class="content-wrapper">
             <div class="row justify-content-center">
@@ -365,26 +388,75 @@
             <div class="cta-icon" >
               <i class="far fa-paper-plane"></i>
             </div>
-
-            <h2 class="cta-title h2">Contact Me</h2>
-            <div class="cta-btns mb--30">
-              <a href="https://www.linkedin.com/in/juyeonkang/" target="_blank" class="linkedin btn btn--primary btn--large mr--15">
-                <i class="fab fa-linkedin"></i>
-                <span class="p2">LinkedIn</span>
-                </a>
-                <a href="#" class="resume btn btn--primary btn--large">
-                  <i class="far fa-file"></i><span class="p2">Download Resume</span>
-                </a>
+            <div>
+              <h2 class="cta-title h2">Contact Me</h2>
             </div>
-            <p>
-              Please feel free to shoot me a message!<br>
-              Let's Talk!
-            </p>
+
+              <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-7 col-10 order-1">
+                  <p class="text-left contact-text">
+                    Please feel free to shoot me a message!<br>
+                    Let's Talk!
+                  </p>    
+                       <div class="cta-btns mb--30 text-md-left">
+                  <a href="https://www.linkedin.com/in/juyeonkang/" target="_blank" class="linkedin btn btn--primary btn--large mr-0">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="p2">LinkedIn</span>
+                    </a>
+                    <a href="#" class="resume btn btn--primary btn--large">
+                      <i class="far fa-file"></i><span class="p2">Download Resume</span>
+                    </a>
+                </div>
+               
+                </div>
+  
+                <div class=" col-md-7 col-lg-7 col-xl-7 col-10 order-2">
+                  
+
+                  <form method="POST" action="send-mail.php" role="form" id="contactForm" name="contactForm" class="contactForm">
+                    <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Name" required="required" data-error="Name is required.">
+                    <div class="help-block with-errors"></div>
+                    </div>
+                    </div>
+                    <div class="col-md-12">
+                    <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                    </div>
+                    </div>
+                    <div class="col-md-12">
+                    <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="required" data-error="Subject is required.">
+                    <div class="help-block with-errors"></div>
+                    </div>
+                    </div>
+                    <div class="col-md-12">
+                    <div class="form-group">
+                    <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Create a message here" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                    </div>
+                    </div>
+                    <div class="col-md-12">
+                    <div class="form-group">
+                    <input type="submit" value="Send Message" class="btn float-left btn--secondary">
+                    <div class="submitting"></div>
+                    </div>
+                    </div>
+                    </div>
+                    </form>
+
+                </div>
+              </div>
+        
+
           </div>
         </div>
-        <div class="cta-shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" >
-          <img src="./image/Path_2_Copy.png" alt="" />
-        </div>
+        <!-- <div class="cta-shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" >
+          <img src="./image/Asset_49.png" alt="" />
+        </div> -->
       </section>
 
       <!-- Footer Section -->
@@ -422,5 +494,6 @@
 
     <!-- Custom JS -->
     <script src="./js/active.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>
