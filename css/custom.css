@@ -23234,14 +23234,14 @@ textarea.form-control {
     font-size: 18px;
     font-weight: 500; }
   
-  .submitting {
+  #status {
     float: left;
     width: 100%;
     padding: 10px 0;
-    display: none;
     font-size: 16px;
-    font-weight: 500;
-    color: #e3b04b; }  
+    font-weight: 600;
+    color: rgb(235, 85, 59);
+   }  
 
 form input[type=submit] {
   width: 50%;
